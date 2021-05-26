@@ -1,0 +1,13 @@
+@import '../../../../assets/scss/shared-styles.scss';
+
+.header-layout {
+    position: fixed;
+    background-color: $pure-white;
+    width: 100%;
+    top: 0px;
+
+    .header-container {
+        padding: 1rem;
+        justify-content: flex-end;
+    }
+}
