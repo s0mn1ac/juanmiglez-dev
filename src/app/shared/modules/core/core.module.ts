@@ -1,15 +1,13 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LayoutComponent } from 'src/app/layout/layout.component';
 import { RouterModule } from '@angular/router';
-import { HeaderComponent } from 'src/app/layout/components/header/header.component';
+import { HeaderComponent } from 'src/app/header/header.component';
 import { PrimengModule } from '../primeng/primeng.module';
 
 
 
 @NgModule({
   declarations: [
-    LayoutComponent,
     HeaderComponent
   ],
   imports: [
@@ -18,7 +16,6 @@ import { PrimengModule } from '../primeng/primeng.module';
     PrimengModule
   ],
   exports: [
-    LayoutComponent,
     HeaderComponent,
     PrimengModule
   ],
