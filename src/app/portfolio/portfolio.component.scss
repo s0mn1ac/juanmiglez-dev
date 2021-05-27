@@ -4,7 +4,9 @@
     margin-top: 68px;
     z-index: 0;
     background-color: teal;
-
+    height: 100%;
+    overflow: auto;
+    
     .portfolio-container {
         height: 2000px;
     }

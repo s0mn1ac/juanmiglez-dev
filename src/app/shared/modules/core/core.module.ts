@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from 'src/app/header/header.component';
 import { PrimengModule } from '../primeng/primeng.module';
-
-
+import { AppService } from '../../services/app.service';
+import { TranslocoService } from '@ngneat/transloco';
+import { TranslocoRootModule } from 'src/app/config/transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -12,10 +13,12 @@ import { PrimengModule } from '../primeng/primeng.module';
   ],
   imports: [
     CommonModule,
+    TranslocoRootModule,
     RouterModule,
     PrimengModule
   ],
   exports: [
+    TranslocoRootModule,
     HeaderComponent,
     PrimengModule
   ],
@@ -27,8 +30,9 @@ export class CoreModule {
     return {
       ngModule: CoreModule,
       providers: [
-
-      ]
+        AppService,
+        TranslocoService
+    ],
     };
   }
 }

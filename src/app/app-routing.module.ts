@@ -12,6 +12,11 @@ const routes: Routes = [
   {
     path: 'portfolio',
     loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule),
+    // data: { animation: 'isRight' }
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule),
     data: { animation: 'isRight' }
   },
   {

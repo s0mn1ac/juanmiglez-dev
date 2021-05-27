@@ -1,8 +1,9 @@
-<div class="header-layout shadow">
+<div class="header-layout shadow" *transloco="let t">
 
     <div class="header-container flex-row">
-        <button pButton pRipple type="button" label="Home" routerLink="/home" class="p-button-text"></button>
-        <button pButton pRipple type="button" label="Portfolio" routerLink="/portfolio" class="p-button-text"></button>
+        <button pButton pRipple type="button" [label]="t('header.home')" routerLink="/home" class="p-button-text"></button>
+        <button pButton pRipple type="button" [label]="t('header.portfolio')" routerLink="/portfolio" class="p-button-text"></button>
+        <button pButton pRipple type="button" [label]="t('header.contact')" routerLink="/contact" class="p-button-text"></button>
     </div>
 
 </div>

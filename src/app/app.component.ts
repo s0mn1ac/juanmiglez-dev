@@ -13,7 +13,6 @@ import { slider } from './route-animations';
 export class AppComponent {
 
   public prepareRoute(outlet: RouterOutlet): any {
-    console.log(outlet)
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
 

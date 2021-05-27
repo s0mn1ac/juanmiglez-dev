@@ -1,13 +1,13 @@
 @import '../../assets/scss/shared-styles.scss';
 
-.home-layout {
+.contact-layout {
     margin-top: 68px;
     z-index: 0;
-    background-color: tomato;
+    background-color: thistle;
     height: 100%;
     overflow: auto;
-
-    .home-container {
+    
+    .contact-container {
         height: 2000px;
     }
 }
