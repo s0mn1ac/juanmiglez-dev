@@ -10,9 +10,9 @@
             <div class="language-selector">
                 <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage" optionLabel="name" (onChange)="changeLanguage()">
                     <ng-template pTemplate="selectedItem">
-                        <div class="language-item flex-row" *ngIf="selectedLanguage">
+                        <div class="language-item selected-item flex-row" *ngIf="selectedLanguage">
                             <img [src]="selectedLanguage.icon" />
-                            <span> {{ t('header.language.' + selectedLanguage.name) }} </span>
+                            <!-- <span> {{ t('header.language.' + selectedLanguage.name) }} </span> -->
                         </div>
                     </ng-template>
                     <ng-template let-language pTemplate="item">

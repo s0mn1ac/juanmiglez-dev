@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 @import './assets/scss/shared-styles.scss';
 
 html, body {
@@ -10,6 +12,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     color: $text-black;
-    font-size: 14px;
+    font-family: $font;
+    font-size: 26px;
     overflow: hidden;
 }
