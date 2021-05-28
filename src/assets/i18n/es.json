@@ -3,7 +3,12 @@
     "header": {
         "home": "Inicio",
         "portfolio": "Portfolio",
-        "contact": "Contacto"
+        "contact": "Contacto",
+
+        "language": {
+            "es": "Español",
+            "en": "Inglés"
+        }
     }
 
 }

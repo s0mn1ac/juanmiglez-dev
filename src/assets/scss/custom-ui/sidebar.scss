@@ -1,0 +1,17 @@
+.p-sidebar {
+    z-index: -1 !important;
+    height: fit-content !important;
+
+    .p-sidebar-header {
+        display: none !important;
+    }
+
+    .p-sidebar-content {
+        margin-top: 68px !important;
+        padding: 1rem !important;
+    }
+}
+
+.p-sidebar-mask {
+    z-index: 0 !important;
+}

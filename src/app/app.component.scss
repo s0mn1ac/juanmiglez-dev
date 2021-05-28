@@ -1,8 +1,18 @@
 .app-layout {
-    height: calc(100% - 68px);
+    height: 100%;
+    position: relative;
+
+    .main-header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
     
-    main {
+    .content {
         position: relative;
         height: 100%;
+        z-index: 0;
+        padding-top: 69px;
     }
 }

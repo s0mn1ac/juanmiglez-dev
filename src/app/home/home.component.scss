@@ -1,11 +1,13 @@
 @import '../../assets/scss/shared-styles.scss';
 
 .home-layout {
-    margin-top: 68px;
+    // margin-top: 68px;
     z-index: 0;
     background-color: tomato;
     height: 100%;
-    overflow: auto;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     .home-container {
         height: 2000px;

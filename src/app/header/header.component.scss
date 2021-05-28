@@ -1,14 +1,48 @@
 @import '../../assets/scss/shared-styles.scss';
 
-.header-layout {
-    position: fixed;
+:host ::ng-deep .header-layout {
+    // position: fixed;
     background-color: $pure-white;
     width: 100%;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
 
     .header-container {
         padding: 1rem;
         justify-content: flex-end;
+        
+        &.header-container-desktop {
+
+            .language-selector {
+    
+                .p-dropdown {
+                    width: 150px;
+    
+                    .language-item {
+                        align-items: center;
+    
+                        img {
+                            width: 25px;
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.header-container-mobile {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1720px) {
+
+    .header-container-desktop {
+        display: none;
+    }
+
+    .header-container-mobile {
+        display: flex !important;
     }
 }
