@@ -9,6 +9,17 @@
             "es": "Español",
             "en": "Inglés"
         }
+    },
+
+    "home": {
+        "phrases": {
+            "phrase1": "Desarrollador web",
+            "phrase2": "Diseñador amateur",
+            "phrase3": "Alimentador de gatos",
+            "phrase4": "Picador de código a tiempo completo",
+            "phrase5": "Mi madre dice que soy un buen chico",
+            "phrase6": "También hago aplicaciones"
+        }
     }
 
 }

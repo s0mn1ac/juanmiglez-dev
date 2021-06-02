@@ -3,7 +3,7 @@
 .home-layout {
     // margin-top: 68px;
     z-index: 0;
-    background-color: tomato;
+    // background-color: tomato;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -11,5 +11,22 @@
 
     .home-container {
         height: 2000px;
+        padding: 1rem;
+        align-items: center;
+        text-align: center;
+
+        .title-container {
+
+            .image-container {
+                justify-content: center;
+
+                img {
+                    width: 50px;
+                    border-radius: 25px;
+                }
+            }
+        }
     }
 }
+
+

@@ -4,11 +4,12 @@ import { CoreModule } from '../shared/modules/core/core.module';
 import { PrimengModule } from '../shared/modules/primeng/primeng.module';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
+import { TypeDeleteComponent } from './type-delete/type-delete.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, TypeDeleteComponent],
   imports: [
     HomeRoutingModule,
     CommonModule,
