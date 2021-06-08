@@ -7,15 +7,15 @@ import { AfterViewInit, Component, ElementRef, Input, OnInit, Renderer2, ViewChi
 })
 export class TypeDeleteComponent implements AfterViewInit {
 
-  @ViewChild("textElement") textElement!: ElementRef;
-  @ViewChild("blinkElement") blinkElement!: ElementRef;
+  @ViewChild('textElement') textElement!: ElementRef;
+  @ViewChild('blinkElement') blinkElement!: ElementRef;
 
   @Input() wordArray: string[] = ['Web developer'];
-  @Input() textColor = "#383838";
-  @Input() fontSize = "26px";
-  @Input() blinkWidth = "2px";
-  @Input() typingSpeedMilliseconds = 200;
-  @Input() deleteSpeedMilliseconds = 100;
+  @Input() textColor = '#383838';
+  @Input() fontSize = '26px';
+  @Input() blinkWidth = '2px';
+  @Input() typingSpeedMilliseconds = 100;
+  @Input() deleteSpeedMilliseconds = 50;
 
   private i = 0;
 
@@ -27,16 +27,16 @@ export class TypeDeleteComponent implements AfterViewInit {
   }
 
   private initVariables(): void {
-    this.renderer.setStyle(this.textElement.nativeElement, "color", this.textColor);
-    this.renderer.setStyle(this.textElement.nativeElement, "font-size", this.fontSize);
-    this.renderer.setStyle(this.textElement.nativeElement, "padding", "0.1em");
-    this.renderer.setStyle(this.blinkElement.nativeElement, "border-right-width", this.blinkWidth);
-    this.renderer.setStyle(this.blinkElement.nativeElement, "border-right-color", this.textColor);
-    this.renderer.setStyle(this.blinkElement.nativeElement, "font-size", this.fontSize);
+    this.renderer.setStyle(this.textElement.nativeElement, 'color', this.textColor);
+    this.renderer.setStyle(this.textElement.nativeElement, 'font-size', this.fontSize);
+    this.renderer.setStyle(this.textElement.nativeElement, 'padding', '0.1em');
+    this.renderer.setStyle(this.blinkElement.nativeElement, 'border-right-width', this.blinkWidth);
+    this.renderer.setStyle(this.blinkElement.nativeElement, 'border-right-color', this.textColor);
+    this.renderer.setStyle(this.blinkElement.nativeElement, 'font-size', this.fontSize);
   }
 
   private typingEffect(): void {
-    const word = this.wordArray[this.i].split("");
+    const word = this.wordArray[this.i].split('');
     const loopTyping = () => {
       if (word.length > 0) {
         this.textElement.nativeElement.innerHTML += word.shift();
@@ -50,17 +50,18 @@ export class TypeDeleteComponent implements AfterViewInit {
   }
 
   private deletingEffect(): void {
-    const word = this.wordArray[this.i].split("");
+    const word = this.wordArray[this.i].split('');
     const loopDeleting = () => {
       if (word.length > 0) {
         word.pop();
-        this.textElement.nativeElement.innerHTML = word.join("");
+        this.textElement.nativeElement.innerHTML = word.join('');
       } else {
         this.i = this.wordArray.length > this.i + 1 ? this.i + 1 : 0;
-        this.typingEffect();
+        setTimeout(() => this.typingEffect(), 500);
         return false;
       }
       setTimeout(loopDeleting, this.deleteSpeedMilliseconds);
+      return undefined;
     };
     loopDeleting();
   }
