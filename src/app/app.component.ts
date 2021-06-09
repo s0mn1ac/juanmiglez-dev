@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { slider } from './route-animations';
 
 @Component({
@@ -11,6 +11,10 @@ import { slider } from './route-animations';
   ]
 })
 export class AppComponent {
+
+  constructor() {
+    console.log('👀 Nothing to see here...');
+  }
 
   public prepareRoute(outlet: RouterOutlet): any {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
