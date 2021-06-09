@@ -7,13 +7,14 @@ export const slider = trigger('routeAnimations', [
     transition('isLeft => *', slideTo('right')),
 ]);
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 function slideTo(direction: string) {
     const optional = { optional: true};
-    return[
+    return [
         query(':enter, :leave', [
             style({
                 position: 'absolute',
-                top: 0,
+                top: '55px',
                 [direction]: 0,
                 width: '100%'
             })
