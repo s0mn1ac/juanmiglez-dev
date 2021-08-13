@@ -8,8 +8,8 @@ import { PrimengModule } from './shared/modules/primeng/primeng.module';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { TranslocoRootModule } from './transloco/transloco-root.module';
 import { TranslocoInitializer } from './config/initializers/transloco.initializer';
+import { TranslocoRootModule } from './config/transloco-root.module';
 
 @NgModule({
   declarations: [AppComponent],

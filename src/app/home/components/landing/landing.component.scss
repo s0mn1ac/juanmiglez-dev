@@ -1,0 +1,20 @@
+.landing-layout {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .title-container {
+
+        .title {
+            justify-content: center;
+            align-items: center;
+
+            img {
+                border-radius: 25px;
+                height: 75px;
+                margin-left: 2rem;
+                width: 75px;
+            }
+        }
+    }
+}

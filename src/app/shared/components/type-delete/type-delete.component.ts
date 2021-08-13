@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-type-delete',
@@ -37,11 +37,11 @@ export class TypeDeleteComponent implements AfterViewInit {
 
   private typingEffect(): void {
     const word = this.wordArray[this.i].split('');
-    const loopTyping = () => {
+    const loopTyping = (): any => {
       if (word.length > 0) {
         this.textElement.nativeElement.innerHTML += word.shift();
       } else {
-        setTimeout(() => this.deletingEffect(), 1000);
+        setTimeout(() => this.deletingEffect(), 3000);
         return;
       }
       setTimeout(loopTyping, this.typingSpeedMilliseconds);
@@ -51,7 +51,7 @@ export class TypeDeleteComponent implements AfterViewInit {
 
   private deletingEffect(): void {
     const word = this.wordArray[this.i].split('');
-    const loopDeleting = () => {
+    const loopDeleting = (): any => {
       if (word.length > 0) {
         word.pop();
         this.textElement.nativeElement.innerHTML = word.join('');

@@ -1,0 +1,16 @@
+<div class="landing-layout flex-column" *transloco="let t">
+
+    <div class="title-container flex-column">
+
+        <div class="title flex-row">
+            <h1> {{ t('home.landing.title') }} </h1>
+            <img src="../../../../assets/images/others/profile.png" />
+        </div>
+        
+        <h1> {{ t('home.landing.subtitle') }} </h1>
+
+        <app-type-delete [wordArray]="wordArray"></app-type-delete>
+
+    </div>
+
+</div>

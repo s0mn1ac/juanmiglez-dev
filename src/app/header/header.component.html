@@ -3,9 +3,9 @@
     <div class="header-layout shadow">
 
         <div class="header-container header-container-desktop flex-row">
-            <button pButton pRipple type="button" [label]="t('header.home')" routerLink="/home" class="p-button-text"></button>
-            <button pButton pRipple type="button" [label]="t('header.portfolio')" routerLink="/portfolio" class="p-button-text"></button>
-            <button pButton pRipple type="button" [label]="t('header.contact')" routerLink="/contact" class="p-button-text"></button>
+            <button pButton pRipple type="button" [label]="t('header.home')" class="p-button-text"></button>
+            <button pButton pRipple type="button" [label]="t('header.portfolio')" class="p-button-text"></button>
+            <button pButton pRipple type="button" [label]="t('header.contact')" class="p-button-text"></button>
 
             <div class="language-selector">
                 <p-dropdown [options]="languages" [(ngModel)]="selectedLanguage" optionLabel="name" (onChange)="changeLanguage()">
@@ -33,9 +33,9 @@
 
     <p-sidebar [(visible)]="isSidebarVisible" position="top" [modal]="false" [showCloseIcon]="false">
         <div class="buttons-container flex-column">
-            <button pButton pRipple type="button" [label]="t('header.home')" routerLink="/home" (click)="toggleSidebar()" class="p-button-text"></button>
-            <button pButton pRipple type="button" [label]="t('header.portfolio')" routerLink="/portfolio" (click)="toggleSidebar()" class="p-button-text"></button>
-            <button pButton pRipple type="button" [label]="t('header.contact')" routerLink="/contact" (click)="toggleSidebar()" class="p-button-text"></button>
+            <button pButton pRipple type="button" [label]="t('header.home')" (click)="toggleSidebar()" class="p-button-text"></button>
+            <button pButton pRipple type="button" [label]="t('header.portfolio')" (click)="toggleSidebar()" class="p-button-text"></button>
+            <button pButton pRipple type="button" [label]="t('header.contact')" (click)="toggleSidebar()" class="p-button-text"></button>
         </div>
     </p-sidebar>
 
