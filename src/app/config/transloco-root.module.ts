@@ -28,4 +28,3 @@ export class TranslocoHttpLoader implements TranslocoLoader {
   ]
 })
 export class TranslocoRootModule { }
-

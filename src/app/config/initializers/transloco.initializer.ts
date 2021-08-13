@@ -3,14 +3,13 @@ import { AppService } from 'src/app/shared/services/app.service';
 
 export function initTransloco(appService: AppService): () => Promise<void> {
 
-    return () => new Promise(async (resolve) => {
+    // eslint-disable-next-line no-async-promise-executor
+    return (): Promise<void> => new Promise(async (resolve) => {
+
         const navigatorLanguage = navigator.language;
-        let lang: string;
-        if (navigatorLanguage.startsWith('es')) {
-            lang = 'es';
-        } else {
-            lang = 'en';
-        }
+
+        const lang: string = navigatorLanguage.startsWith('es') ? 'es' : 'en';
+
         appService.translocoService.setActiveLang(lang);
         await appService.translocoService.load(lang).toPromise();
         resolve();
