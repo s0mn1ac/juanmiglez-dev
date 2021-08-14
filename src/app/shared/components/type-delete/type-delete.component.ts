@@ -27,7 +27,6 @@ export class TypeDeleteComponent implements AfterViewInit {
   }
 
   private initVariables(): void {
-    this.renderer.setStyle(this.textElement.nativeElement, 'color', this.textColor);
     this.renderer.setStyle(this.textElement.nativeElement, 'font-size', this.fontSize);
     this.renderer.setStyle(this.textElement.nativeElement, 'padding', '0.1em');
     this.renderer.setStyle(this.blinkElement.nativeElement, 'border-right-width', this.blinkWidth);

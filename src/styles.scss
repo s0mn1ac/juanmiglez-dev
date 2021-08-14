@@ -15,6 +15,16 @@ body {
     overflow: hidden;
 }
 
+body.dark-mode {
+    color: $text-white;
+    background-color: $material-dark;
+}
+
+body.light-mode {
+    color: $text-black;
+    background-color: $material-light;
+}
+
 .p-component {
     font-family: $font !important;
 }

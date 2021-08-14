@@ -1,8 +1,6 @@
 @import '../../assets/scss/shared-styles.scss';
 
 :host ::ng-deep .header-layout {
-    // position: fixed;
-    background-color: $pure-white;
     width: 100%;
     height: 55px;
     top: 0px;

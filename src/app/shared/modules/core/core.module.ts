@@ -7,10 +7,12 @@ import { AppService } from '../../services/app.service';
 import { TranslocoService } from '@ngneat/transloco';
 import { TranslocoRootModule } from 'src/app/config/transloco-root.module';
 import { FormsModule } from '@angular/forms';
+import { DarkModeToggleComponent } from 'src/app/header/components/dark-mode-toggle/dark-mode-toggle.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    DarkModeToggleComponent
   ],
   imports: [
     CommonModule,
@@ -23,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     TranslocoRootModule,
     FormsModule,
     HeaderComponent,
+    DarkModeToggleComponent,
     PrimengModule
   ],
   providers: []
