@@ -30,12 +30,17 @@ export class HeaderComponent implements OnInit {
     this.selectedLanguage = this.languages[0];
   }
 
+  public async navigateTo(name: string): Promise<void> {
+    this.appService.navigationService.navigateTo(name);
+    this.isSidebarVisible = false;
+  }
+
   public changeLanguage(): void {
     this.appService.translocoService.setActiveLang(this.selectedLanguage.id);
   }
 
   public toggleSidebar(): void {
-    this.isSidebarVisible = ! this.isSidebarVisible;
+    this.isSidebarVisible = !this.isSidebarVisible;
   }
 
 }

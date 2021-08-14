@@ -3,19 +3,20 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
-    data: { animation: 'isLeft' }
-  },
-  {
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
+    loadChildren: (): any => import('./home/home.module').then(m => m.HomeModule)
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [
+    RouterModule.forRoot(routes, {
+      anchorScrolling: 'enabled',
+      scrollPositionRestoration: 'enabled'
+      // onSameUrlNavigation: 'reload',
+      // scrollPositionRestoration: 'enabled'
+    })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

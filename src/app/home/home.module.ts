@@ -6,9 +6,11 @@ import { HomeComponent } from './components/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { TypeDeleteComponent } from '../shared/components/type-delete/type-delete.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
-  declarations: [HomeComponent, TypeDeleteComponent, LandingComponent],
+  declarations: [HomeComponent, TypeDeleteComponent, LandingComponent, ContactComponent, AboutComponent],
   imports: [
     HomeRoutingModule,
     CommonModule,
