@@ -1,8 +1,10 @@
+@import '../../../../assets/scss/settings/colors.scss';
+
 .about-layout {
     justify-content: center;
     align-items: center;
     text-align: center;
 
     height: 2000px;
-    background-color: tomato;
+    background-color: $orange;
 }

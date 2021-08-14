@@ -1,0 +1,26 @@
+.p-dropdown {
+    background-color: transparent !important;
+}
+
+.p-dropdown-panel {
+
+    .p-dropdown-items {
+        padding: 0.3rem !important;
+
+        .p-dropdown-item {
+            border-radius: 4px !important;
+
+            &:hover {
+                background-color: $hover !important;
+            }
+            
+            &.p-highlight {
+                background-color: $orange !important;
+            }
+
+            &:last-child {
+                margin-top: 0.3rem;
+            }
+        }
+    }
+}

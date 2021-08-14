@@ -13,16 +13,64 @@ body {
     font-family: $font;
     font-size: 26px;
     overflow: hidden;
-}
 
-body.dark-mode {
-    color: $text-white;
-    background-color: $material-dark;
-}
+    &.dark-mode {
+        color: $text-white;
+        background-color: $material-dark;
 
-body.light-mode {
-    color: $text-black;
-    background-color: $material-light;
+        .p-dropdown {
+            border-color: $orange !important;
+
+            .p-dropdown-trigger {
+                color: $orange !important;
+            }
+        }
+        
+        .p-dropdown-panel {
+            background-color: $material-dark;
+    
+            .p-dropdown-item {
+                color: $text-white;
+
+                &:hover {
+                    color: $text-white !important;
+                }
+
+                &.p-highlight {
+                    color: $text-white !important;
+                }
+            }
+        }
+    }
+
+    &.light-mode {
+        color: $text-black;
+        background-color: $material-light;
+
+        .p-dropdown {
+            border-color: $orange !important;
+
+            .p-dropdown-trigger {
+                color: $orange !important;
+            }
+        }
+    
+        .p-dropdown-panel {
+            background-color: $material-light;
+    
+            .p-dropdown-item {
+                color: $text-black;
+
+                &:hover {
+                    color: $text-black !important;
+                }
+
+                &.p-highlight {
+                    color: $text-white !important;
+                }
+            }
+        }
+    }
 }
 
 .p-component {

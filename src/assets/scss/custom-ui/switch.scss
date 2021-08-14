@@ -1,0 +1,11 @@
+.p-inputswitch{
+    vertical-align: sub;
+
+    &.p-focus .p-inputswitch-slider {
+        box-shadow: none !important;
+    }
+
+    &.p-inputswitch-checked .p-inputswitch-slider {
+        background-color: $orange !important;
+    }
+}
