@@ -27,6 +27,17 @@
             }
         }
 
+    },
+
+    "footer": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "portfolio": "Portfolio",
+        "contact": "Contacto",
+        "thanksFirst": "Hecho con",
+        "thanksSecond": "por Juanmi González.",
+        "thanksThird": "Desde un pequeño pueblito de",
+        "thanksFourth": "para el mundo."
     }
 
 }

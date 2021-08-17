@@ -8,10 +8,12 @@ import { TranslocoService } from '@ngneat/transloco';
 import { TranslocoRootModule } from 'src/app/config/transloco-root.module';
 import { FormsModule } from '@angular/forms';
 import { DarkModeToggleComponent } from 'src/app/header/components/dark-mode-toggle/dark-mode-toggle.component';
+import { FooterComponent } from 'src/app/footer/footer.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
+    FooterComponent,
     DarkModeToggleComponent
   ],
   imports: [
@@ -25,6 +27,7 @@ import { DarkModeToggleComponent } from 'src/app/header/components/dark-mode-tog
     TranslocoRootModule,
     FormsModule,
     HeaderComponent,
+    FooterComponent,
     DarkModeToggleComponent,
     PrimengModule
   ],

@@ -11,7 +11,8 @@ body {
     text-rendering: optimizeLegibility;
     color: $text-black;
     font-family: $font;
-    font-size: 26px;
+    font-size: 25px;
+    font-weight: 300;
     overflow: hidden;
 
     &.dark-mode {
@@ -75,4 +76,14 @@ body {
 
 .p-component {
     font-family: $font !important;
+}
+
+@media only screen and (max-width: 445px) {
+    body {
+        font-size: 20px;
+
+        h1 {
+            font-size: 50px;
+        }
+    }
 }

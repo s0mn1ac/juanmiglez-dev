@@ -27,6 +27,17 @@
             }
         }
 
+    },
+
+    "footer": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "portfolio": "Portfolio",
+        "contact": "Contacto",
+        "thanksFirst": "Made with",
+        "thanksSecond": "by Juanmi González.",
+        "thanksThird": "From a little town in",
+        "thanksFourth": "to the world."
     }
 
 }

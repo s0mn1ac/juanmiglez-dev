@@ -1,0 +1,96 @@
+@import '../../assets/scss/shared-styles.scss';
+
+:host ::ng-deep .footer-layout {
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+    // background-color: $material-dark;
+    padding: 0 1rem 2rem 1rem;
+
+    p-divider {
+        margin: 0 1rem;
+    }
+
+    .links-container, .social-container, .thanks-container {
+        justify-content: center;
+        align-items: center;
+        // color: $text-white;
+    }
+
+    .links-container {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+
+        span {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            margin: 1rem;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    .social-container {
+        font-size: xx-large;
+        margin: 2rem 0;
+        
+        em {
+            margin: 0 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+
+                &.fa-instagram {
+                    color: transparent;
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                }
+
+                &.fa-github {
+                    color: $git;
+                }
+
+                &.fa-linkedin {
+                    color: $linkedin;
+                }
+
+                &.fa-envelope {
+                    color: $green;
+                }
+            }
+        }
+    }
+
+    .thanks-container {
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+
+        em {
+            margin: 0 0.3rem;
+            color: $red;
+        }
+
+        .tenerife-container {
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+    
+            .middle {
+                color: $blue;
+            }
+    
+            .end {
+                color: $yellow;
+            }
+        }
+    }
+}
