@@ -1,4 +1,5 @@
-@import '../../../../assets/scss/settings/colors.scss';
+// @import '../../../../assets/scss/settings/colors.scss';
+@import '../../../../assets/scss/settings/fonts.scss';
 
 :host ::ng-deep .contact-layout {
     justify-content: center;
@@ -6,6 +7,15 @@
     text-align: center;
     position: relative;
     padding: 3rem 0 3rem 17px;
+
+    .handwritten-title-container {
+        position: relative;
+        
+        span {
+            font-family: $font-handwritten;
+            font-size: 25px;
+        }
+    }
 
     .button-container {
         margin-top: 3rem;
@@ -21,12 +31,9 @@
         img.arrow-mobile {
             position: absolute;
             top: -51px;
-            right: -55px;
+            right: -48px;
             width: 55px;
             transform: rotateX(180deg) rotate(300deg);
         }
     }
-
-    // height: 2000px;
-    // background-color: teal;
 }

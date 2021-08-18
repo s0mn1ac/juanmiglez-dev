@@ -1,3 +1,14 @@
-:host ::ng-deep .p-button {
-    box-shadow: none !important;
+::ng-deep .p-button {
+    // box-shadow: none !important;
+    
+    &.custom-rounded-button {
+        border-radius: 50px;
+        background-color: $primary-color;
+        border-color: $primary-color;
+        
+        &:hover {
+            background-color: $primary-color !important;
+            border-color: $primary-color !important;
+        }
+    }
 }

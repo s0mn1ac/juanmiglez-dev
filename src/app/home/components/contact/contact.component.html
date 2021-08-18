@@ -1,10 +1,14 @@
 <div class="contact-layout flex-column" *transloco="let t">
 
+    <div class="handwritten-title-container">
+        <span> {{ t('home.contact.name') }} </span>
+    </div>
+
     <h1> {{ t('home.contact.title') }} </h1>
     <h4> {{ t('home.contact.subtitle') }} </h4>
 
     <div class="button-container">
-        <p-button label="{{ t('info.email') }}"></p-button>
+        <p-button label="{{ t('info.email') }}" styleClass="zoom-shadow custom-rounded-button"></p-button>
         <img src="../../../../assets/images/misc/arrow-10.svg" class="arrow arrow-desktop">
         <img src="../../../../assets/images/misc/arrow-01.svg" class="arrow arrow-mobile">
     </div>

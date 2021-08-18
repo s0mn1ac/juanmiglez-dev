@@ -18,6 +18,7 @@
     "home": {
 
         "landing": {
+            "name": "Inicio",
             "title": "¡Hola!",
             "subtitle": "Soy Juanmi González",
             "phrases": {
@@ -31,6 +32,7 @@
         },
 
         "contact": {
+            "name": "Contacto",
             "title": "¿Tienes alguna duda?",
             "subtitle": "Puedes ponerte en contacto conmigo a través de mi correo electrónico:"
         }
