@@ -30,6 +30,18 @@
                 "phrase6": "I also develop apps"
             }
         },
+
+        "about": {
+            "name": "About me",
+            "title": "Let me introduce myself",
+            "subtitle": "Puedes ponerte en contacto conmigo a través de mi correo electrónico:"
+        },
+        
+        "portfolio": {
+            "name": "Portfolio",
+            "title": "Check my projects!",
+            "subtitle": "Puedes ponerte en contacto conmigo a través de mi correo electrónico:"
+        },
         
         "contact": {
             "name": "Contact",

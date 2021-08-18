@@ -31,6 +31,18 @@
             }
         },
 
+        "about": {
+            "name": "Sobre mí",
+            "title": "Deja que me presente",
+            "subtitle": "Puedes ponerte en contacto conmigo a través de mi correo electrónico:"
+        },
+
+        "portfolio": {
+            "name": "Portfolio",
+            "title": "Echa un vistazo a mis proyectos",
+            "subtitle": "Puedes ponerte en contacto conmigo a través de mi correo electrónico:"
+        },
+
         "contact": {
             "name": "Contacto",
             "title": "¿Tienes alguna duda?",

@@ -1,4 +1,3 @@
-// @import '../../../../assets/scss/settings/colors.scss';
 @import '../../../../assets/scss/settings/fonts.scss';
 
 :host ::ng-deep .contact-layout {
@@ -46,7 +45,6 @@
         height: 100%;
         min-height: 300px;
         background-image: url('../../../../assets/images/others/contact.svg');
-        alt: 'https://www.freepik.es/vectores/abstracto';
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;

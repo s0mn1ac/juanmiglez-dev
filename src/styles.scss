@@ -89,10 +89,10 @@ body {
 @media only screen and (max-width: 855px) {
 
     body {
-        font-size: 20px;
+        font-size: 20px !important;
 
         h1 {
-            font-size: 60px;
+            font-size: 60px !important;
         }
 
         .images-container :last-child {
@@ -104,10 +104,10 @@ body {
 @media only screen and (max-width: 700px) {
 
     body {
-        font-size: 18px;
+        font-size: 18px !important;
 
         h1 {
-            font-size: 50px;
+            font-size: 50px !important;
         }
 
         .images-container :first-child {
