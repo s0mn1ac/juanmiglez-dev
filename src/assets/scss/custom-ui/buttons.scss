@@ -9,6 +9,22 @@
             color: $primary-color;
         }
     }
+
+    &.p-button-outlined {
+        box-shadow: none !important;
+        color: $primary-color;
+        border: none;
+        
+        &:enabled:hover {
+            color: $primary-color !important;
+            border: none !important;
+            background-color: transparent !important;
+        }
+
+        .pi {
+            transition: all 0.3s ease-in-out;
+        }
+    }
     
     &.custom-rounded-button {
         border-radius: 50px;

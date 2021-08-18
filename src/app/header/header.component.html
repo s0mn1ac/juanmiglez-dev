@@ -28,7 +28,7 @@
         </div>
 
         <div class="header-container header-container-mobile flex-row">
-            <button pButton pRipple type="button" icon="pi pi-bars" class="p-button-rounded p-button-outlined" (click)="toggleSidebar()"></button>
+            <button pButton pRipple type="button" icon="{{ isSidebarVisible ? 'pi pi-times' : 'pi pi-bars' }}" class="p-button-rounded p-button-outlined" (click)="toggleSidebar()"></button>
         </div>
         
     </div>
