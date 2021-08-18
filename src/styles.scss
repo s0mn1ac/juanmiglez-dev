@@ -19,12 +19,8 @@ body {
         color: $text-white;
         background-color: $material-dark;
 
-        .p-dropdown {
-            border-color: $primary-color !important;
-
-            .p-dropdown-trigger {
-                color: $primary-color !important;
-            }
+        .p-dropdown .p-dropdown-trigger {
+            color: $primary-color !important;
         }
         
         .p-dropdown-panel {
@@ -56,12 +52,8 @@ body {
         color: $text-black;
         background-color: $material-light;
 
-        .p-dropdown {
-            border-color: $primary-color !important;
-
-            .p-dropdown-trigger {
-                color: $primary-color !important;
-            }
+        .p-dropdown .p-dropdown-trigger {
+            color: $primary-color !important;
         }
     
         .p-dropdown-panel {

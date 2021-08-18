@@ -1,5 +1,14 @@
 ::ng-deep .p-button {
-    // box-shadow: none !important;
+    
+    &.p-button-text {
+        box-shadow: none !important;
+        color: unset;
+
+        &:enabled:hover {
+            background-color: transparent !important;
+            color: $primary-color;
+        }
+    }
     
     &.custom-rounded-button {
         border-radius: 50px;
