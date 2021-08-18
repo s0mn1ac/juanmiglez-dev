@@ -20,10 +20,10 @@ body {
         background-color: $material-dark;
 
         .p-dropdown {
-            border-color: $orange !important;
+            border-color: $primary-color !important;
 
             .p-dropdown-trigger {
-                color: $orange !important;
+                color: $primary-color !important;
             }
         }
         
@@ -53,10 +53,10 @@ body {
         background-color: $material-light;
 
         .p-dropdown {
-            border-color: $orange !important;
+            border-color: $primary-color !important;
 
             .p-dropdown-trigger {
-                color: $orange !important;
+                color: $primary-color !important;
             }
         }
     
@@ -86,12 +86,32 @@ body {
     font-family: $font !important;
 }
 
-@media only screen and (max-width: 445px) {
+@media only screen and (max-width: 855px) {
+
     body {
         font-size: 20px;
 
         h1 {
+            font-size: 60px;
+        }
+
+        .images-container :last-child {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    body {
+        font-size: 18px;
+
+        h1 {
             font-size: 50px;
         }
+
+        .images-container :first-child {
+            display: none;
+       }
     }
 }
