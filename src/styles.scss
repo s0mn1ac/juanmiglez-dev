@@ -42,6 +42,10 @@ body {
                 }
             }
         }
+
+        .p-scrolltop .p-scrolltop-icon {
+            color: $material-dark;
+        }
     }
 
     &.light-mode {
@@ -70,6 +74,10 @@ body {
                     color: $text-white !important;
                 }
             }
+        }
+
+        .p-scrolltop .p-scrolltop-icon {
+            color: $material-light;
         }
     }
 }
