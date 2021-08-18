@@ -12,7 +12,7 @@ export class TypeDeleteComponent implements AfterViewInit {
 
   @Input() wordArray: string[] = ['Web developer'];
   @Input() textColor = '#383838';
-  @Input() fontSize = '26px';
+  @Input() fontSize = '25px';
   @Input() blinkWidth = '2px';
   @Input() typingSpeedMilliseconds = 100;
   @Input() deleteSpeedMilliseconds = 50;

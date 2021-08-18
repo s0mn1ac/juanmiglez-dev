@@ -1,4 +1,7 @@
 {
+    "info": {
+        "email": "juanmi.gonzalezm@gmail.com"
+    },
 
     "header": {
         "home": "Home",
@@ -25,15 +28,20 @@
                 "phrase5": "My mom says I'm a nice guy",
                 "phrase6": "I also develop apps"
             }
+        },
+        
+        "contact": {
+            "title": "Got any questions?",
+            "subtitle": "You can contact me through my email:"
         }
 
     },
 
     "footer": {
-        "home": "Inicio",
-        "about": "Sobre mí",
+        "home": "Home",
+        "about": "About me",
         "portfolio": "Portfolio",
-        "contact": "Contacto",
+        "contact": "Contact",
         "thanksFirst": "Made with",
         "thanksSecond": "by Juanmi González.",
         "thanksThird": "From a little town in",

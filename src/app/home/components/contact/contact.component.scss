@@ -1,10 +1,32 @@
 @import '../../../../assets/scss/settings/colors.scss';
 
-.contact-layout {
+:host ::ng-deep .contact-layout {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+    padding: 3rem 0 3rem 17px;
 
-    height: 2000px;
+    .button-container {
+        margin-top: 3rem;
+        position: relative;
+
+        img.arrow-desktop {
+            position: absolute;
+            right: -70px;
+            width: 55px;
+            bottom: 15px;
+        }
+
+        img.arrow-mobile {
+            position: absolute;
+            top: -51px;
+            right: -55px;
+            width: 55px;
+            transform: rotateX(180deg) rotate(300deg);
+        }
+    }
+
+    // height: 2000px;
     // background-color: teal;
 }

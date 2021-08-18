@@ -1,4 +1,7 @@
 {
+    "info": {
+        "email": "juanmi.gonzalezm@gmail.com"
+    },
 
     "header": {
         "home": "Inicio",
@@ -25,6 +28,11 @@
                 "phrase5": "Mi madre dice que soy un buen chico",
                 "phrase6": "También hago aplicaciones"
             }
+        },
+
+        "contact": {
+            "title": "¿Tienes alguna duda?",
+            "subtitle": "Puedes ponerte en contacto conmigo a través de mi correo electrónico:"
         }
 
     },

@@ -46,6 +46,10 @@ body {
         .p-scrolltop .p-scrolltop-icon {
             color: $material-dark;
         }
+
+        img.arrow {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(51deg) brightness(105%) contrast(96%);
+        }
     }
 
     &.light-mode {
@@ -78,6 +82,10 @@ body {
 
         .p-scrolltop .p-scrolltop-icon {
             color: $material-light;
+        }
+
+        img.arrow {
+            filter: invert(12%) sepia(10%) saturate(165%) hue-rotate(316deg) brightness(99%) contrast(82%);
         }
     }
 }
@@ -112,6 +120,26 @@ body {
 
         .images-container :first-child {
             display: none;
-       }
+        }
+    }
+}
+
+@media only screen and (max-width: 454px) {
+
+    body {
+
+        img.arrow-desktop {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 455px) {
+
+    body {
+
+        img.arrow-mobile {
+            display: none;
+        }
     }
 }

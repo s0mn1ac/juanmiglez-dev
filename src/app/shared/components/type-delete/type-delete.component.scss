@@ -3,6 +3,10 @@
     animation: blink 1s infinite;
 }
 
+.text {
+    font-weight: normal;
+}
+
 @keyframes blink {
 
     to {

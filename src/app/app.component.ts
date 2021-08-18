@@ -5,10 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-
-  constructor() {
-    console.log('👀 Nothing to see here...');
-  }
-
-}
+export class AppComponent { }

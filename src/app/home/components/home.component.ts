@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   private initSubscriptions(): void {
     this.destroySubscriptions();
     this.route$ = this.route.fragment.subscribe(fragment => this.fragment = fragment);
-    this.navigation$ = this.appService.navigationService.navigationObservable.subscribe( async (route: string) => this.navigateTo(route));
+    this.navigation$ = this.appService.navigationService.navigationObservable.subscribe( async (route: string) => route ? this.navigateTo(route) : console.log('👀 Nothing to see here...'));
   }
 
   private destroySubscriptions(): void {
