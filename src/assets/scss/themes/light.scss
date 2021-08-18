@@ -1,0 +1,32 @@
+.light-mode {
+    color: $text-black;
+    background-color: $material-light;
+
+    .p-dropdown .p-dropdown-trigger {
+        color: $primary-color !important;
+    }
+
+    .p-dropdown-panel {
+        background-color: $material-light;
+
+        .p-dropdown-item {
+            color: $text-black;
+
+            &:hover {
+                color: $text-black !important;
+            }
+
+            &.p-highlight {
+                color: $text-white !important;
+            }
+        }
+    }
+
+    .p-scrolltop .p-scrolltop-icon {
+        color: $material-light;
+    }
+
+    img.arrow {
+        filter: invert(12%) sepia(10%) saturate(165%) hue-rotate(316deg) brightness(99%) contrast(82%);
+    }
+}

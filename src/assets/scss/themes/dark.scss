@@ -1,0 +1,32 @@
+.dark-mode {
+    color: $text-white;
+    background-color: $material-dark;
+
+    .p-dropdown .p-dropdown-trigger {
+        color: $primary-color !important;
+    }
+    
+    .p-dropdown-panel {
+        background-color: $material-dark;
+
+        .p-dropdown-item {
+            color: $text-white;
+
+            &:hover {
+                color: $text-white !important;
+            }
+
+            &.p-highlight {
+                color: $text-white !important;
+            }
+        }
+    }
+
+    .p-scrolltop .p-scrolltop-icon {
+        color: $material-dark;
+    }
+
+    img.arrow {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(51deg) brightness(105%) contrast(96%);
+    }
+}

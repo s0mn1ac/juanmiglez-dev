@@ -1,4 +1,7 @@
 @import './assets/scss/shared-styles.scss';
+@import './assets/scss/themes/light.scss';
+@import './assets/scss/themes/dark.scss';
+@import './assets/scss/settings/queries.scss';
 
 html, body {
     height: 100%;
@@ -14,124 +17,8 @@ body {
     font-size: 25px;
     font-weight: 300;
     overflow: hidden;
-
-    &.dark-mode {
-        color: $text-white;
-        background-color: $material-dark;
-
-        .p-dropdown .p-dropdown-trigger {
-            color: $primary-color !important;
-        }
-        
-        .p-dropdown-panel {
-            background-color: $material-dark;
-    
-            .p-dropdown-item {
-                color: $text-white;
-
-                &:hover {
-                    color: $text-white !important;
-                }
-
-                &.p-highlight {
-                    color: $text-white !important;
-                }
-            }
-        }
-
-        .p-scrolltop .p-scrolltop-icon {
-            color: $material-dark;
-        }
-
-        img.arrow {
-            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(51deg) brightness(105%) contrast(96%);
-        }
-    }
-
-    &.light-mode {
-        color: $text-black;
-        background-color: $material-light;
-
-        .p-dropdown .p-dropdown-trigger {
-            color: $primary-color !important;
-        }
-    
-        .p-dropdown-panel {
-            background-color: $material-light;
-    
-            .p-dropdown-item {
-                color: $text-black;
-
-                &:hover {
-                    color: $text-black !important;
-                }
-
-                &.p-highlight {
-                    color: $text-white !important;
-                }
-            }
-        }
-
-        .p-scrolltop .p-scrolltop-icon {
-            color: $material-light;
-        }
-
-        img.arrow {
-            filter: invert(12%) sepia(10%) saturate(165%) hue-rotate(316deg) brightness(99%) contrast(82%);
-        }
-    }
 }
 
 .p-component {
     font-family: $font !important;
-}
-
-@media only screen and (max-width: 855px) {
-
-    body {
-        font-size: 20px !important;
-
-        h1 {
-            font-size: 60px !important;
-        }
-
-        .images-container :last-child {
-            display: none;
-        }
-    }
-}
-
-@media only screen and (max-width: 700px) {
-
-    body {
-        font-size: 18px !important;
-
-        h1 {
-            font-size: 50px !important;
-        }
-
-        .images-container :first-child {
-            display: none;
-        }
-    }
-}
-
-@media only screen and (max-width: 454px) {
-
-    body {
-
-        img.arrow-desktop {
-            display: none;
-        }
-    }
-}
-
-@media only screen and (min-width: 455px) {
-
-    body {
-
-        img.arrow-mobile {
-            display: none;
-        }
-    }
 }
