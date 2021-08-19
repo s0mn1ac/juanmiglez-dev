@@ -9,12 +9,14 @@ import { TranslocoRootModule } from 'src/app/config/transloco-root.module';
 import { FormsModule } from '@angular/forms';
 import { DarkModeToggleComponent } from 'src/app/header/components/dark-mode-toggle/dark-mode-toggle.component';
 import { FooterComponent } from 'src/app/footer/footer.component';
+import { ParallaxDirective } from '../../directives/parallax.directive';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
-    DarkModeToggleComponent
+    DarkModeToggleComponent,
+    ParallaxDirective
   ],
   imports: [
     CommonModule,
@@ -29,6 +31,7 @@ import { FooterComponent } from 'src/app/footer/footer.component';
     HeaderComponent,
     FooterComponent,
     DarkModeToggleComponent,
+    ParallaxDirective,
     PrimengModule
   ],
   providers: []

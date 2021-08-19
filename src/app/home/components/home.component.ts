@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { AppService } from 'src/app/shared/services/app.service';
@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(private appService: AppService, private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-
     this.initSubscriptions();
   }
 

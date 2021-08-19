@@ -10,4 +10,12 @@
         align-self: center;
         width: 100%;
     }
+
+    .parallax-item {
+        position: fixed;
+        width: 25px;
+        height: 25px;
+        background-color: tomato;
+    }
 }
+

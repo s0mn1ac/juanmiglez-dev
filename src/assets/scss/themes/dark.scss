@@ -2,6 +2,10 @@
     color: $text-white;
     background-color: $material-dark;
 
+    .header-container {
+        background-color: $material-dark;
+    }
+
     .p-dropdown .p-dropdown-trigger {
         color: $primary-color !important;
     }
