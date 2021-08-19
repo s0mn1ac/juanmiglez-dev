@@ -1,5 +1,6 @@
-import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { IParallaxScrollConfig } from 'ngx-parallax-scroll';
 import { Subscription } from 'rxjs';
 import { AppService } from 'src/app/shared/services/app.service';
 
@@ -10,6 +11,10 @@ import { AppService } from 'src/app/shared/services/app.service';
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
+  @ViewChild('home') home!: ElementRef;
+
+  // public items: any[] = [];
+
   private fragment!: string;
 
   private route$!: Subscription;
@@ -19,6 +24,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.initSubscriptions();
+    // setTimeout(() => this.initParallaxItems(), 1);
   }
 
   ngAfterViewInit(): void {
@@ -29,6 +35,24 @@ export class HomeComponent implements OnInit, OnDestroy {
       console.warn('e');
     }
   }
+
+  // private initParallaxItems(): void {
+
+  //   const height = this.home.nativeElement.scrollHeight;
+  //   const width = this.home.nativeElement.clientWidth;
+  //   const ratio = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9];
+
+  //   for (let index = 0; index < 20; index++) {
+  //     const item: any = {};
+  //     item.xAxis = Math.floor(Math.random() * (width - 0)) + 0;
+  //     item.yAxis = Math.floor(Math.random() * (height - 0)) + 0;
+  //     item.ratio = ratio[Math.floor(Math.random() * (ratio.length - 0)) + 0];
+  //     item.url = '../../../../assets/images/others/about.svg';
+  //     this.items.push(item);
+  //   }
+
+  //   console.log(this.items)
+  // }
 
   private navigateTo(route: string): void {
     this.router.navigate([''], {fragment: route}).then(() => document.getElementById(route)?.scrollIntoView({behavior: 'smooth'}));

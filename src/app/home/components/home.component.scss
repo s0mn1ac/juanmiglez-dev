@@ -13,9 +13,37 @@
 
     .parallax-item {
         position: fixed;
-        width: 25px;
-        height: 25px;
-        background-color: tomato;
+        width: 75px;
+        height: 75px;
+        z-index: -1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: opacity(0.1);
+        // position: relative;
+        // background-color: red;
+    }
+
+    .smartphone-mockup {
+        position: fixed;
+        width: 600px;
+        height: 500px;
+        top: 150vh;
+        right: -150px;
+        transform: rotate(338deg);
+        z-index: -1;
+        background-image: url('../../../assets/images/others/smartphone.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        // filter: opacity(0.1);
+    }
+
+    .parallax-img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
