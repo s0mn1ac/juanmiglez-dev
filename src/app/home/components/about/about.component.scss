@@ -1,11 +1,11 @@
 @import '../../../../assets/scss/settings/fonts.scss';
+@import '../../../../assets/scss/settings/colors.scss';
 
 :host ::ng-deep .about-layout {
     justify-content: start;
     align-items: center;
     text-align: center;
     position: relative;
-    padding: 3rem 0 1rem 17px;
     min-height: calc(100vh - 60px);
     height: 100%;
     overflow: hidden;
@@ -18,6 +18,76 @@
             font-size: 25px;
         }
     }
+
+    .skills-container {
+        // justify-content: center;
+        // padding: 3rem;
+        // margin: 1rem;
+        margin-top: 3rem;
+        border-radius: 10px;
+        height: fit-content;
+        max-width: 800px;
+        background-color: $material-light;
+        // background-color: #D1495B;
+        // text-align: left;
+
+
+        .title {
+            padding: 2rem;
+            background-color: $primary-color;
+            color: $text-white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .skills {
+            padding: 2rem;
+
+            .skill {
+    
+                &:not(:first-child) {
+                    margin-top: 2rem;
+                }
+    
+                .logo {
+                    width: 50px;
+                }
+    
+                .description {
+                    width: 100%;
+                    align-self: center;
+                    margin-left: 2rem;
+                    // margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    // .studies-container {
+    //     width: 100%;
+    //     max-width: 1500px;
+    //     display: grid;
+    //     gap: 1rem;
+    //     margin-top: 2rem;
+    //     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+
+        
+
+    //     .image-container {
+    //         padding: 0 2rem;
+    //         // position: relative;
+    //         // grid-column: span 2;
+
+    //         img {
+    //             width: 100%;
+    //             // position: absolute;
+    //             // height: 100%;
+    //             // top: 50%;
+    //             // left: 50%;
+    //             // transform: translate(calc(-50% + 2rem), -50%);
+    //         }
+    //     }
+    // }
 
     .section-image-container {
         margin-top: 2rem;

@@ -1,3 +1,17 @@
+@media only screen and (max-width: 1255px) {
+
+    body {
+
+        img.right-side-img {
+            display: none;
+        }
+
+        img.left-side-img {
+            display: none;
+        }
+    }
+}
+
 @media only screen and (max-width: 855px) {
 
     body {
@@ -25,6 +39,10 @@
         .images-container :first-child {
             display: none;
         }
+
+        .main-layout {
+            padding: 3rem 2rem 1rem calc(2rem + 17px);
+        }
     }
 }
 
@@ -34,6 +52,10 @@
 
         img.arrow-desktop {
             display: none;
+        }
+
+        .main-layout {
+            padding: 3rem 1rem 1rem calc(1rem + 17px);
         }
     }
 }

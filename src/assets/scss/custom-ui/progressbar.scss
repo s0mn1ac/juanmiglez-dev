@@ -1,0 +1,8 @@
+.p-progressbar {
+    border-radius: 1rem !important;
+
+    .p-progressbar-value {
+        border-radius: 1rem;
+        background-color: $primary-color !important;
+    }   
+}

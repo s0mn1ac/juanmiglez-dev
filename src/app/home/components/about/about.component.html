@@ -1,4 +1,4 @@
-<div class="about-layout flex-column" *transloco="let t">
+<div class="main-layout about-layout flex-column" *transloco="let t">
 
     <div class="handwritten-title-container">
         <span> {{ t('home.about.name') }} </span>
@@ -6,7 +6,52 @@
 
     <h1> {{ t('home.about.title') }} </h1>
     <h4> {{ t('home.about.subtitle') }} </h4>
+    
+    <div class="skills-container flex-column zoom-shadow">
 
-    <div class="section-image-container"></div>
+        <div class="title">
+            <h3> {{ t('home.about.experience', { years: yearsOfExperience }) }} </h3>
+        </div>
+
+        <div class="skills">
+
+            <div class="skill flex-row">
+                <img src="../../../../assets/images/technologies/angular.png" class="logo" />
+                <div class="description">
+                    <p-progressBar [value]="80" [showValue]="false"></p-progressBar>
+                </div>
+            </div>
+    
+            <div class="skill flex-row">
+                <img src="../../../../assets/images/technologies/flutter.png" class="logo" />
+                <div class="description">
+                    <p-progressBar [value]="60" [showValue]="false"></p-progressBar>
+                </div>
+            </div>
+    
+            <div class="skill flex-row">
+                <img src="../../../../assets/images/technologies/dart.png" class="logo" />
+                <div class="description">
+                    <p-progressBar [value]="65" [showValue]="false"></p-progressBar>
+                </div>
+            </div>
+    
+            <div class="skill flex-row">
+                <img src="../../../../assets/images/technologies/js-moderno.png" class="logo" />
+                <div class="description">
+                    <p-progressBar [value]="55" [showValue]="false"></p-progressBar>
+                </div>
+            </div>
+    
+            <div class="skill flex-row">
+                <img src="../../../../assets/images/technologies/typescript.png" class="logo" />
+                <div class="description">
+                    <p-progressBar [value]="75" [showValue]="false"></p-progressBar>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 
 </div>

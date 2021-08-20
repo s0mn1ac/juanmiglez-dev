@@ -6,9 +6,26 @@
     width: 100%;
 
     section {
-        max-width: 1920px;
+        max-width: 1600px;
         align-self: center;
         width: 100%;
+        position: relative;
+
+        img.right-side-img {
+            position: absolute;
+            width: 800px;
+            transform: rotate(-30deg);
+            top: 350px;
+            right: -500px;
+        }
+
+        img.left-side-img {
+            position: absolute;
+            width: 1600px;
+            transform: rotate(284deg);
+            top: -300px;
+            left: -800px;
+        }
     }
 
     .parallax-item {

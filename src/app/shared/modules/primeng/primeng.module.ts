@@ -6,6 +6,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { SidebarModule } from 'primeng/sidebar';
+import { ProgressBarModule } from 'primeng/progressbar';
 
 @NgModule({
   declarations: [],
@@ -15,7 +16,8 @@ import { SidebarModule } from 'primeng/sidebar';
     DropdownModule,
     InputSwitchModule,
     ScrollTopModule,
-    SidebarModule
+    SidebarModule,
+    ProgressBarModule
   ]
 })
 export class PrimengModule { }
