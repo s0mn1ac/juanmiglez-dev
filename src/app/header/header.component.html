@@ -3,10 +3,12 @@
     <div class="header-layout shadow">
 
         <div class="header-container header-container-desktop flex-row">
+            
             <button pButton pRipple type="button" [label]="t('header.home')" (click)="navigateTo('start')" class="p-button-text"></button>
             <button pButton pRipple type="button" [label]="t('header.about')" (click)="navigateTo('about')" class="p-button-text"></button>
             <button pButton pRipple type="button" [label]="t('header.portfolio')" (click)="navigateTo('portfolio')" class="p-button-text"></button>
             <button pButton pRipple type="button" [label]="t('header.contact')" (click)="navigateTo('contact')" class="p-button-text"></button>
+            
             <app-dark-mode-toggle></app-dark-mode-toggle>
 
             <div class="language-selector">
@@ -14,7 +16,6 @@
                     <ng-template pTemplate="selectedItem">
                         <div class="language-item selected-item flex-row" *ngIf="selectedLanguage">
                             <img [src]="selectedLanguage.icon" />
-                            <!-- <span> {{ t('header.language.' + selectedLanguage.name) }} </span> -->
                         </div>
                     </ng-template>
                     <ng-template let-language pTemplate="item">
@@ -33,12 +34,20 @@
         
     </div>
 
-    <p-sidebar [(visible)]="isSidebarVisible" position="top" [modal]="false" [showCloseIcon]="false">
+    <p-sidebar [(visible)]="isSidebarVisible" position="top" [modal]="true" [showCloseIcon]="false">
         <div class="buttons-container flex-column">
             <button pButton pRipple type="button" [label]="t('header.home')" (click)="navigateTo('start')" class="p-button-text"></button>
             <button pButton pRipple type="button" [label]="t('header.about')" (click)="navigateTo('about')" class="p-button-text"></button>
             <button pButton pRipple type="button" [label]="t('header.portfolio')" (click)="navigateTo('portfolio')" class="p-button-text"></button>
             <button pButton pRipple type="button" [label]="t('header.contact')" (click)="navigateTo('contact')" class="p-button-text"></button>
+        </div>
+        <div class="options-container flex-row">
+            <app-dark-mode-toggle></app-dark-mode-toggle>
+            <div class="language-selector flex-row">
+                <div class="language-item flex-row pointer" [ngClass]="{'selected': language?.id === selectedLanguage?.id}" (click)="selectLanguage(language)" *ngFor="let language of languages">
+                    <img [src]="language.icon" />
+                </div>
+            </div>
         </div>
     </p-sidebar>
 

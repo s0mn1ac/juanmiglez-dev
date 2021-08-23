@@ -6,6 +6,15 @@
         background-color: $material-dark;
     }
 
+    .p-sidebar {
+        background-color: $material-dark;
+        color: $text-white;
+
+        .p-button-text {
+            font-size: 25px;
+        }
+    }
+
     .p-dropdown .p-dropdown-trigger {
         color: $primary-color !important;
     }
@@ -14,7 +23,7 @@
         background-color: $material-dark;
 
         .p-dropdown-item {
-            color: $text-white;
+            color: $text-white !important;
 
             &:hover {
                 color: $text-white !important;

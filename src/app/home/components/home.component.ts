@@ -1,6 +1,5 @@
-import { Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { IParallaxScrollConfig } from 'ngx-parallax-scroll';
 import { Subscription } from 'rxjs';
 import { AppService } from 'src/app/shared/services/app.service';
 

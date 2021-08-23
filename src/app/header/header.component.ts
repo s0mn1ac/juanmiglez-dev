@@ -35,6 +35,11 @@ export class HeaderComponent implements OnInit {
     this.isSidebarVisible = false;
   }
 
+  public selectLanguage(language: any): void {
+    this.selectedLanguage = language;
+    this.changeLanguage();
+  }
+
   public changeLanguage(): void {
     this.appService.translocoService.setActiveLang(this.selectedLanguage.id);
   }

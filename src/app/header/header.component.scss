@@ -13,29 +13,33 @@
         
         &.header-container-desktop {
 
+            app-dark-mode-toggle {
+                margin-left: 2rem;
+            }
+
             .language-selector {
-                margin-left: 1rem;
-    
+                // margin-left: 1rem;
+            
                 .p-dropdown {
                     width: 85px;
                     height: 100%;
                     border-radius: 25px;
-
+            
                     .p-dropdown-label {
                         padding: 3px !important;
                     }
-    
+            
                     .language-item {
                         width: 100%;
                         height: 100%;
                         // justify-content: center;
                         align-items: center;
-    
+            
                         img {
                             width: 25px;
                             margin-right: 0.5rem;
                         }
-
+            
                         &.selected-item {
                             justify-content: flex-end;
                             
@@ -44,12 +48,12 @@
                             }
                         }
                     }
-
+            
                     .p-dropdown-panel {
                         margin-top: 10px;
                         margin-left: -20px;
                     }
-
+            
                     box-shadow: none !important;
                 }
             }
@@ -69,5 +73,35 @@
 
     .header-container-mobile {
         display: flex !important;
+    }
+}
+
+::ng-deep .options-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem 1rem 1rem;
+
+    app-dark-mode-toggle {
+        height: fit-content;
+    }
+
+    .language-selector {
+
+        .language-item {
+            padding: 0.5rem;
+            border-radius: 25px;
+
+            &:first-child {
+                margin-right: 1rem;
+            }
+
+            &.selected {
+                background-color: $red;
+            }
+
+            img {
+                width: 25px;
+            }
+        }
     }
 }

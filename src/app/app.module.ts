@@ -13,7 +13,16 @@ import { TranslocoRootModule } from './config/transloco-root.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, CoreModule.forRoot(), PrimengModule, RouterModule, HttpClientModule, TranslocoRootModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    CoreModule.forRoot(),
+    PrimengModule,
+    RouterModule,
+    HttpClientModule,
+    TranslocoRootModule
+  ],
   providers: [TranslocoInitializer],
   bootstrap: [AppComponent]
 })

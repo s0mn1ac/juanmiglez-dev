@@ -7,5 +7,9 @@
 
     &.p-inputswitch-checked .p-inputswitch-slider {
         background-color: $primary-color !important;
+
+        &:before {
+            background-color: $material-dark !important;
+        }
     }
 }
