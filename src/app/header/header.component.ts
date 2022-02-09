@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
     this.selectedLanguage = this.languages[0];
   }
 
-  public async navigateTo(name: string): Promise<void> {
+  public navigateTo(name: string): void {
     this.appService.navigationService.navigateTo(name);
     this.isSidebarVisible = false;
   }

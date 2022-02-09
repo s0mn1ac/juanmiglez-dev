@@ -3,17 +3,16 @@
     <p-divider></p-divider>
 
     <div class="links-container flex-row">
-        <span> {{ t('footer.home') }} </span>
-        <span> {{ t('footer.about') }} </span>
-        <span> {{ t('footer.portfolio') }} </span>
-        <span> {{ t('footer.contact') }} </span>
+        <span (click)="navigateTo('start')"> {{ t('footer.home') }} </span>
+        <span (click)="navigateTo('about')"> {{ t('footer.about') }} </span>
+        <span (click)="navigateTo('portfolio')"> {{ t('footer.portfolio') }} </span>
+        <span (click)="navigateTo('contact')"> {{ t('footer.contact') }} </span>
     </div>
 
     <div class="social-container flex-row">
-        <!-- <em class="fab fa-instagram"></em> -->
-        <em class="fab fa-github"></em>
-        <em class="fab fa-linkedin"></em>
-        <em class="far fa-envelope"></em>
+        <em class="fab fa-github" (click)="navigateByUrl('https://github.com/s0mn1ac')"></em>
+        <em class="fab fa-linkedin" (click)="navigateByUrl('https://www.linkedin.com/in/juanmigonzalezm/')"></em>
+        <em class="far fa-envelope" (click)="navigateByUrl()"></em>
     </div>
     
     <div class="thanks-container flex-row">
@@ -21,13 +20,11 @@
         <em class="fas fa-heart"></em>
         <span> {{ t('footer.thanksSecond') }} </span>
         <span style="margin-left: 0.3rem;"> {{ t('footer.thanksThird') }} </span>
-
         <div class="tenerife-container flex-row">
             <span class="start"> Te </span>
             <span class="middle"> ner </span>
             <span class="end"> ife </span>
         </div>
-
         <span> {{ t('footer.thanksFourth') }} </span>
     </div>
 
