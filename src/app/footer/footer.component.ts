@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AppService } from '../shared/services/app.service';
 
 @Component({
@@ -6,24 +6,15 @@ import { AppService } from '../shared/services/app.service';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
 
-  constructor(private appService: AppService) {
-    //
-  }
-
-  ngOnInit(): void {
-    //
-  }
+  constructor(private appService: AppService) { }
 
   public navigateTo(name: string): void {
     this.appService.navigationService.navigateTo(name);
   }
 
-  public navigateByUrl(url?: string): void {
-    if (url == null) {
-      return;
-    }
+  public navigateByUrl(url: string): void {
     window.open(url, '_blank');
   }
 

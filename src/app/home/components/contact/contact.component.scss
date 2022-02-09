@@ -1,4 +1,5 @@
 @import '../../../../assets/scss/settings/fonts.scss';
+@import '../../../../assets/scss/settings/colors.scss';
 
 :host ::ng-deep .contact-layout {
     justify-content: start;
@@ -21,6 +22,22 @@
     .button-container {
         margin-top: 3rem;
         position: relative;
+
+        a.custom-rounded-link {
+            border-radius: 50px;
+            background-color: $primary-color;
+            border-color: $primary-color;
+            padding: 0.5rem 1rem;
+            color: $pure-white;
+            font-size: 1rem;
+            font-weight: normal;
+            text-decoration: none;
+            
+            &:hover {
+                background-color: $primary-color !important;
+                border-color: $primary-color !important;
+            }
+        }
 
         img.arrow-desktop {
             position: absolute;
