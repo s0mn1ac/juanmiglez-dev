@@ -69,6 +69,34 @@
         .main-layout {
             padding: 3rem 1rem 1rem calc(1rem + 17px);
         }
+
+        h3.desktop-title {
+            display: none !important;
+        }
+
+        h3.mobile-title {
+            display: block !important;
+        }
+
+        .skills-container {
+            margin: 3rem 0rem 0rem 0rem !important;
+
+            .skills .skill {
+
+                .logo {
+                    width: 30px !important;
+                    max-height: 30px !important;
+                }
+    
+                .description {
+                    width: calc(100% - 30px) !important;
+    
+                    .p-progressbar {
+                        height: 1rem !important;
+                    }
+                }
+            }
+        }
     }
 }
 

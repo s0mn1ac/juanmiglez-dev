@@ -33,7 +33,8 @@
             "title": "Deja que me presente",
             "subtitle": "Soy desarrollador de aplicaciones, especializado en web y dispositivos móviles. A lo largo de mi carrera he trabajado en proyectos de empresas como Atos, Talgo o Aena.",
             "subtitle2": "El desarrollo de software, aparte de mi trabajo es mi pasión y por eso nunca paro de aprender nuevas tecnologías y herramientas para mantenerme al día con las últimas novedades del sector.",
-            "experience": "Cuento con más de {{years}} años de experiencia en las siguientes tecnologías:"
+            "experience": "Cuento con más de {{years}} años de experiencia en las siguientes tecnologías:",
+            "experienceShort": "Experiencia"
         },
 
         "portfolio": {

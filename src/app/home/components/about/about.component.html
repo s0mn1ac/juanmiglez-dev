@@ -11,43 +11,58 @@
     <div class="skills-container flex-column zoom-shadow">
 
         <div class="title">
-            <h3> {{ t('home.about.experience', { years: yearsOfExperience }) }} </h3>
+            <h3 class="desktop-title"> {{ t('home.about.experience', { years: yearsOfExperience }) }} </h3>
+            <h3 class="mobile-title"> {{ t('home.about.experienceShort', { years: yearsOfExperience }) }} </h3>
         </div>
 
         <div class="skills">
 
             <div class="skill flex-row">
-                <img src="../../../../assets/images/technologies/angular.png" class="logo" />
+                <img src="../../../../assets/images/technologies/angular.svg" class="logo" />
                 <div class="description">
-                    <p-progressBar [value]="80" [showValue]="false"></p-progressBar>
+                    <p-progressBar [value]="95" [showValue]="false"></p-progressBar>
                 </div>
             </div>
     
             <div class="skill flex-row">
-                <img src="../../../../assets/images/technologies/flutter.png" class="logo" />
-                <div class="description">
-                    <p-progressBar [value]="60" [showValue]="false"></p-progressBar>
-                </div>
-            </div>
-    
-            <div class="skill flex-row">
-                <img src="../../../../assets/images/technologies/dart.png" class="logo" />
+                <img src="../../../../assets/images/technologies/flutter.svg" class="logo" />
                 <div class="description">
                     <p-progressBar [value]="65" [showValue]="false"></p-progressBar>
                 </div>
             </div>
     
             <div class="skill flex-row">
-                <img src="../../../../assets/images/technologies/js-moderno.png" class="logo" />
+                <img src="../../../../assets/images/technologies/dart.svg" class="logo" />
                 <div class="description">
-                    <p-progressBar [value]="55" [showValue]="false"></p-progressBar>
+                    <p-progressBar [value]="65" [showValue]="false"></p-progressBar>
                 </div>
             </div>
     
             <div class="skill flex-row">
-                <img src="../../../../assets/images/technologies/typescript.png" class="logo" />
+                <img src="../../../../assets/images/technologies/ionic.svg" class="logo" />
                 <div class="description">
-                    <p-progressBar [value]="75" [showValue]="false"></p-progressBar>
+                    <p-progressBar [value]="80" [showValue]="false"></p-progressBar>
+                </div>
+            </div>
+    
+            <div class="skill flex-row">
+                <img src="../../../../assets/images/technologies/typescript.svg" class="logo" />
+                <div class="description">
+                    <p-progressBar [value]="85" [showValue]="false"></p-progressBar>
+                </div>
+            </div>
+            
+            <div class="skill flex-row">
+                <img src="../../../../assets/images/technologies/node.svg" class="logo" />
+                <div class="description">
+                    <p-progressBar [value]="65" [showValue]="false"></p-progressBar>
+                </div>
+            </div>
+
+            <div class="skill flex-row">
+                <img src="../../../../assets/images/technologies/spring.svg" class="logo" />
+                <div class="description">
+                    <p-progressBar [value]="80" [showValue]="false"></p-progressBar>
                 </div>
             </div>
 

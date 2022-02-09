@@ -20,17 +20,12 @@
     }
 
     .skills-container {
-        // justify-content: center;
-        // padding: 3rem;
-        // margin: 1rem;
-        margin-top: 3rem;
+        margin: 3rem 1rem 1rem 1rem;
         border-radius: 10px;
         height: fit-content;
         max-width: 800px;
         background-color: $material-light;
-        // background-color: #D1495B;
-        // text-align: left;
-
+        width: 100%;
 
         .title {
             padding: 2rem;
@@ -38,6 +33,10 @@
             color: $text-white;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+
+            h3.mobile-title {
+                display: none;
+            }
         }
         
         .skills {
@@ -51,10 +50,11 @@
     
                 .logo {
                     width: 50px;
+                    max-height: 50px;
                 }
     
                 .description {
-                    width: 100%;
+                    width: calc(100% - 50px);
                     align-self: center;
                     margin-left: 2rem;
                     // margin-right: 1rem;
