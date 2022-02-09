@@ -22,14 +22,7 @@ export class LandingComponent implements OnInit, OnDestroy {
 
   private buildWordArray(): void {
 
-    this.wordArray = [
-      this.appService.translocoService.translate('home.landing.phrases.phrase1'),
-      this.appService.translocoService.translate('home.landing.phrases.phrase2'),
-      this.appService.translocoService.translate('home.landing.phrases.phrase3'),
-      this.appService.translocoService.translate('home.landing.phrases.phrase4'),
-      this.appService.translocoService.translate('home.landing.phrases.phrase5'),
-      this.appService.translocoService.translate('home.landing.phrases.phrase6'),
-    ];
+    this.wordArray = [this.appService.translocoService.translate('home.landing.phrases.phrase1')];
   }
 
   private initSubscriptions(): void {

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1255px) {
+@media only screen and (max-width: 1625px) {
 
     body {
 
@@ -21,6 +21,12 @@
             font-size: 60px !important;
         }
 
+        .profile-img {
+            height: 60px !important;
+            margin-left: 1rem !important;
+            width: 60px !important;
+        }
+
         .images-container :last-child {
             display: none;
         }
@@ -36,6 +42,12 @@
             font-size: 50px !important;
         }
 
+        .profile-img {
+            height: 55px !important;
+            margin-left: 1rem !important;
+            width: 55px !important;
+        }
+
         .images-container :first-child {
             display: none;
         }
@@ -46,7 +58,7 @@
     }
 }
 
-@media only screen and (max-width: 454px) {
+@media only screen and (max-width: 475px) {
 
     body {
 
@@ -60,12 +72,19 @@
     }
 }
 
-@media only screen and (min-width: 455px) {
+@media only screen and (max-width: 375px) {
 
     body {
+        font-size: 16px !important;
 
-        img.arrow-mobile {
-            display: none;
+        h1 {
+            font-size: 40px !important;
+        }
+
+        .profile-img {
+            height: 50px !important;
+            margin-left: 1rem !important;
+            width: 50px !important;
         }
     }
 }

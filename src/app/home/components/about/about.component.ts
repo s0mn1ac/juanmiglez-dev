@@ -9,16 +9,12 @@ export class AboutComponent implements OnInit {
 
   public yearsOfExperience!: number;
 
-  constructor() {
-    //
-  }
-
   ngOnInit(): void {
     this.calculateYearsOfExperience();
   }
 
   private calculateYearsOfExperience(): void {
-    this.yearsOfExperience = new Date().getFullYear() - 2019;
+    this.yearsOfExperience = new Date().getFullYear() - 2020;
   }
 
 }

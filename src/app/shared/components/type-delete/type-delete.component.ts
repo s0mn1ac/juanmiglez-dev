@@ -16,6 +16,7 @@ export class TypeDeleteComponent implements AfterViewInit {
   @Input() blinkWidth = '2px';
   @Input() typingSpeedMilliseconds = 100;
   @Input() deleteSpeedMilliseconds = 50;
+  @Input() loopEnabled = false;
 
   private i = 0;
 
@@ -49,6 +50,11 @@ export class TypeDeleteComponent implements AfterViewInit {
   }
 
   private deletingEffect(): void {
+
+    if (!this.loopEnabled) {
+      return;
+    }
+
     const word = this.wordArray[this.i].split('');
     const loopDeleting = (): any => {
       if (word.length > 0) {

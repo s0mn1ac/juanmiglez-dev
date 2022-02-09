@@ -24,10 +24,7 @@
             "phrases": {
                 "phrase1": "Desarrollador web",
                 "phrase2": "Diseñador amateur",
-                "phrase3": "Alimentador de gatos",
-                "phrase4": "Picador de código a tiempo completo",
-                "phrase5": "Mi madre dice que soy un buen chico",
-                "phrase6": "También hago aplicaciones"
+                "phrase3": "Especializado en front"
             }
         },
 
@@ -42,7 +39,7 @@
         "portfolio": {
             "name": "Portfolio",
             "title": "Echa un vistazo a mis proyectos",
-            "subtitle": "Puedes ponerte en contacto conmigo a través de mi correo electrónico:"
+            "subtitle": "Oops... aún no he añadido contenido a esta sección. ¡Necesito un poco más de tiempo!"
         },
 
         "contact": {
