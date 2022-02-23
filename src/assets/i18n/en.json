@@ -31,8 +31,8 @@
         "about": {
             "name": "About me",
             "title": "Let me introduce myself",
-            "subtitle": "Soy desarrollador de aplicaciones, especializado en web y dispositivos móviles. A lo largo de mi carrera he trabajado en proyectos de empresas como Atos, Talgo o Aena.",
-            "subtitle2": "El desarrollo de software, aparte de mi trabajo es mi pasión y por eso nunca paro de aprender nuevas tecnologías y herramientas para mantenerme al día con las últimas novedades del sector.",
+            "subtitle": "I am an app developer, specialized in web and mobile devices. Throughout my career I have worked on projects for companies such as Atos, Talgo or Aena.",
+            "subtitle2": "Software development, apart from my job, is my passion and that is why I never stop learning new technologies and tools to keep up with the latest news of this world.",
             "experience": "I have more than {{years}} years of experience on the following technologies:",
             "experienceShort": "Experience"
         },
@@ -40,7 +40,7 @@
         "portfolio": {
             "name": "Portfolio",
             "title": "Check my projects!",
-            "subtitle": "Puedes ponerte en contacto conmigo a través de mi correo electrónico:"
+            "subtitle": "Oops... I haven't added any content to this section yet. I need more time!"
         },
         
         "contact": {
