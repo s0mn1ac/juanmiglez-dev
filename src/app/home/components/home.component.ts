@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   // public items: any[] = [];
 
-  private fragment!: string;
+  private fragment!: string | null;
 
   private route$!: Subscription;
   private navigation$!: Subscription;
