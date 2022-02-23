@@ -47,7 +47,9 @@ Thumbs.db
 
 # Firebase
 /public
+/.firebase
 .firebaserc
+.firebase
 firebase.json
 firebase-hosting-pull-request.yml
 hosting.cHVibGlj.cache
